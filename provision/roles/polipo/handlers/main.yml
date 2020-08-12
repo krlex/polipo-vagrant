@@ -1,2 +1,7 @@
 ---
-# handlers file for polipo
+- name: restart polipo services
+  become: yes
+  service:
+    name: polipo
+    state: restart
+

@@ -1,2 +1,8 @@
 ---
-# tasks file for polipo
+
+- name: Install polipo packages
+  become: yes
+  with_items: "{{ debian_packages }}"
+  packages:
+    pkg: "{{ item.name }}"
+    state: latest

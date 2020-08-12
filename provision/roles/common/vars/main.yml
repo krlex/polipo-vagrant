@@ -1,2 +1,6 @@
 ---
-# vars file for common
+debian_packages:
+  - name: vim
+  - name: git
+  - name: ftp
+  - name: vsftpd
