@@ -2,6 +2,6 @@
 - name: Install packages
   become: yes
   with_items: "{{ debian_packages }}"
-  packages:
+  package:
     pkg: "{{ item.name }}"
     state: latest
