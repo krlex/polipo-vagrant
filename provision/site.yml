@@ -1,0 +1,6 @@
+---
+- name: Installation and configuration Polipo
+  hosts: all
+  roles:
+    - common
+    - polipo
